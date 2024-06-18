@@ -1,7 +1,9 @@
 name: Release Obsidian plugin
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - "*"
 
 env:
   PLUGIN_NAME: obsidian-auto-link-title
